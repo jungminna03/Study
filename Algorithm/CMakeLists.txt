@@ -14,5 +14,5 @@ foreach(FILE ${ESEY_FILES})
 
     # 그 이름으로 실행 파일을 생성! (예: add_executable(Two_Sum Esey/Two_Sum.cpp))
     add_executable(${FILE_NAME} ${FILE}
-            Esey/Contains_Duplicate.cpp)
+            Esey/Move_Zeroes.cpp)
 endforeach()
