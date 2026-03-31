@@ -15,6 +15,11 @@ struct ListNode {
 
 class Solution {
 public:
+    // 차이를 지우는 방법 찾기
+    // 두 대상을 섞어서 차이를 상쇄시키는 작전
+
+    // 실제 사용 예
+    // 네트워크 동기화: 클라이언트 시간과 서버 시간을 이렇게 오프셋 계산을 통해 보정시킴
     ListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {
         ListNode* a = headA;
         ListNode* b = headB;
