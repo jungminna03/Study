@@ -99,3 +99,11 @@ targets:
       - sdk: AVFoundation.framework
       - sdk: CoreAudio.framework
       - sdk: CoreMedia.framework
+    postBuildScripts:
+      - name: Copy Siv3D engine resources into bundle
+        script: |
+          set -e
+          rsync -a --delete "$SRCROOT/../GameMath/App/engine/" "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/engine/"
+          if [ -d "$SRCROOT/../GameMath/App/example" ]; then
+            rsync -a --delete "$SRCROOT/../GameMath/App/example/" "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/example/"
+          fi
