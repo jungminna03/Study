@@ -21,23 +21,23 @@ settings:
       - $(inherited)
       - "@executable_path/../Frameworks"
     HEADER_SEARCH_PATHS:
-      - $(SIV3D_0_6_16_MACOS)/include
-      - $(SIV3D_0_6_16_MACOS)/include/ThirdParty
+      - $(HOME)/Siv3D/include
+      - $(HOME)/Siv3D/include/ThirdParty
     LIBRARY_SEARCH_PATHS:
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/boost
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/freetype
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/harfbuzz
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libgif
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libjpeg-turbo
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libogg
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libpng
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libtiff
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libvorbis
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libwebp
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/opencv
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/opus
-      - $(SIV3D_0_6_16_MACOS)/lib/macOS/zlib
+      - $(HOME)/Siv3D/lib/macOS
+      - $(HOME)/Siv3D/lib/macOS/boost
+      - $(HOME)/Siv3D/lib/macOS/freetype
+      - $(HOME)/Siv3D/lib/macOS/harfbuzz
+      - $(HOME)/Siv3D/lib/macOS/libgif
+      - $(HOME)/Siv3D/lib/macOS/libjpeg-turbo
+      - $(HOME)/Siv3D/lib/macOS/libogg
+      - $(HOME)/Siv3D/lib/macOS/libpng
+      - $(HOME)/Siv3D/lib/macOS/libtiff
+      - $(HOME)/Siv3D/lib/macOS/libvorbis
+      - $(HOME)/Siv3D/lib/macOS/libwebp
+      - $(HOME)/Siv3D/lib/macOS/opencv
+      - $(HOME)/Siv3D/lib/macOS/opus
+      - $(HOME)/Siv3D/lib/macOS/zlib
     OTHER_CPLUSPLUSFLAGS:
       - $(OTHER_CFLAGS)
       - -fvisibility=hidden
