@@ -1,10 +1,10 @@
-﻿# include <Siv3D.hpp>
+# include <Siv3D.hpp>
 
 const double unitSize = 20.0;
 
 void RenderGrid()
 {
-	const auto center = Scene::Center(); 
+	const auto center = Scene::Center();
 	const auto sceneSize = Scene::Size();
 
 	for (double x = 0; x < sceneSize.x; x += unitSize) {
@@ -20,6 +20,12 @@ void RenderGrid()
 	}
 }
 
+Vec2 toScene(const Vec2& logical)
+{
+	const auto center = Scene::Center();
+	return { center.x + logical.x, center.y - logical.y };
+}
+
 void update();
 void draw();
 
@@ -27,20 +33,24 @@ void Main()
 {
 	while (System::Update())
 	{
-		RenderGrid();
 		update();
 		draw();
 	}
 }
 
-const int moveSpeed = 100.f;
+constexpr double moveSpeed = 200.0;
+constexpr double playerRadius = 15.0;
+Vec2 playerPos{ 0, 0 };
 
 void update()
 {
-	KeyA.down();
+	playerPos.x += (KeyRight.pressed() - KeyLeft.pressed()) * moveSpeed * Scene::DeltaTime();
+	playerPos.y += (KeyUp.pressed() - KeyDown.pressed()) * moveSpeed * Scene::DeltaTime();
 }
 
-void render()
+void draw()
 {
+	RenderGrid();
 
+	Circle{ toScene(playerPos), playerRadius }.draw(Palette::White);
 }
