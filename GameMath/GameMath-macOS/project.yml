@@ -1,0 +1,101 @@
+name: GameMath
+options:
+  bundleIdPrefix: com.nyxrux62
+  createIntermediateGroups: true
+  deploymentTarget:
+    macOS: "10.15"
+
+settings:
+  base:
+    ALWAYS_SEARCH_USER_PATHS: NO
+    ARCHS: x86_64
+    CLANG_CXX_LANGUAGE_STANDARD: "c++2a"
+    CLANG_CXX_LIBRARY: "libc++"
+    CLANG_ENABLE_OBJC_ARC: YES
+    CODE_SIGN_IDENTITY: "-"
+    COMBINE_HIDPI_IMAGES: YES
+    GCC_C_LANGUAGE_STANDARD: gnu99
+    ONLY_ACTIVE_ARCH: YES
+    SDKROOT: macosx
+    LD_RUNPATH_SEARCH_PATHS:
+      - $(inherited)
+      - "@executable_path/../Frameworks"
+    HEADER_SEARCH_PATHS:
+      - $(SIV3D_0_6_16_MACOS)/include
+      - $(SIV3D_0_6_16_MACOS)/include/ThirdParty
+    LIBRARY_SEARCH_PATHS:
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/boost
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/freetype
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/harfbuzz
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libgif
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libjpeg-turbo
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libogg
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libpng
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libtiff
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libvorbis
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/libwebp
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/opencv
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/opus
+      - $(SIV3D_0_6_16_MACOS)/lib/macOS/zlib
+    OTHER_CPLUSPLUSFLAGS:
+      - $(OTHER_CFLAGS)
+      - -fvisibility=hidden
+
+  configs:
+    Debug:
+      GCC_OPTIMIZATION_LEVEL: "0"
+      GCC_PREPROCESSOR_DEFINITIONS:
+        - DEBUG=1
+        - $(inherited)
+      DEBUG_INFORMATION_FORMAT: dwarf
+      MTL_ENABLE_DEBUG_INFO: YES
+      ENABLE_TESTABILITY: YES
+    Release:
+      DEBUG_INFORMATION_FORMAT: "dwarf-with-dsym"
+      ENABLE_NS_ASSERTIONS: NO
+      MTL_ENABLE_DEBUG_INFO: NO
+
+targets:
+  GameMath:
+    type: application
+    platform: macOS
+    sources:
+      - path: ../GameMath/Main.cpp
+    info:
+      path: Info.plist
+    settings:
+      base:
+        PRODUCT_NAME: GameMath
+        PRODUCT_BUNDLE_IDENTIFIER: com.nyxrux62.GameMath
+        INFOPLIST_FILE: Info.plist
+        CONFIGURATION_BUILD_DIR: $(SRCROOT)/../GameMath/App
+        OTHER_LDFLAGS:
+          - -lSiv3D
+          - -lboost_filesystem
+          - -lopusfile
+          - -lopus
+          - -lzlib
+          - -ltiff
+          - -lopencv_imgcodecs
+          - -lopencv_objdetect
+          - -lopencv_imgproc
+          - -lopencv_core
+          - -lopencv_photo
+          - -lopencv_videoio
+          - -lwebp
+          - -lvorbisfile
+          - -lvorbisenc
+          - -lvorbis
+          - -lharfbuzz
+          - -lfreetype
+          - -lpng16
+          - -logg
+          - -lturbojpeg
+          - -llibgif
+          - -lcurl
+    dependencies:
+      - sdk: AudioToolbox.framework
+      - sdk: AVFoundation.framework
+      - sdk: CoreAudio.framework
+      - sdk: CoreMedia.framework
