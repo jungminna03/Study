@@ -23,8 +23,8 @@ The project builds on both Windows (Visual Studio / MSBuild) and macOS (Xcode / 
 
 - Project: `GameMath-macOS/` — `project.yml` (xcodegen, committed) generates `GameMath.xcodeproj` (gitignored). Regenerate after edits: `cd GameMath-macOS && xcodegen generate`.
 - Tool: [xcodegen](https://github.com/yonaskolb/XcodeGen) — `brew install xcodegen`.
-- Dependency: Siv3D 0.6.16 macOS distribution at `$SIV3D_0_6_16_MACOS` (set in `~/.zshrc`, e.g. `$HOME/Siv3D`). Contains `include/`, `lib/macOS/`, `examples/`.
-- Build (CLI): `xcodebuild -project GameMath-macOS/GameMath.xcodeproj -scheme GameMath -configuration Debug build`. The env var must be visible — if launching `xcodebuild` outside an interactive shell, pass it inline (`xcodebuild ... SIV3D_0_6_16_MACOS=$HOME/Siv3D build`).
+- Dependency: Siv3D 0.6.16 macOS distribution at `$HOME/Siv3D` (hardcoded in `project.yml` via `$(HOME)/Siv3D`). If you install Siv3D elsewhere, sed-replace `$(HOME)/Siv3D` in `project.yml` and regenerate.
+- Build (CLI): `xcodebuild -project GameMath-macOS/GameMath.xcodeproj -scheme GameMath -configuration Debug build`.
 - Output: `GameMath/App/GameMath.app` (via `CONFIGURATION_BUILD_DIR`). A post-build rsync copies `GameMath/App/engine/` and `GameMath/App/example/` into `GameMath.app/Contents/Resources/` so Siv3D can find its engine assets (shaders, fonts, soundfont) at runtime.
 - Run: `open GameMath/App/GameMath.app`, or from Xcode/Rider.
 - Target arch: `x86_64` only (Siv3D's shipped libs aren't fat). On Apple Silicon the app runs under Rosetta 2.
