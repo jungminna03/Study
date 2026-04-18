@@ -1,4 +1,5 @@
-# include <Siv3D.hpp>
+#include <Siv3D.hpp>
+#include <vector>
 
 const double unitSize = 20.0;
 
@@ -52,5 +53,28 @@ void draw()
 {
 	RenderGrid();
 
-	Circle{ toScene(playerPos), playerRadius }.draw(Palette::White);
+	float rad = 0.f;
+	
+	std::vector<Circle> hearts;
+	
+	if (hearts.empty())
+	{
+		for (rad = 0.f; rad < Math::TwoPi; rad += 0.01f)
+		{
+			float sin = sinf(rad);
+			float cos = cosf(rad);
+			float cos2 = cosf(rad * 2);
+			float cos3 = cosf(rad * 3);
+			float cos4 = cosf(rad * 4);
+			float x = 16.f * sin * sin * sin;
+			float y = 13 * cos - 5 * cos2 - 2 * cos3 - cos4;
+			hearts.push_back(Circle { x, y , 1 });
+		}
+	}
+	
+	for (auto& c : hearts)
+	{
+		c.center = toScene(c.center * 10 + playerPos);
+		c.draw();
+	}
 }

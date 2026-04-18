@@ -70,6 +70,10 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.nyxrux62.GameMath
         INFOPLIST_FILE: Info.plist
         CONFIGURATION_BUILD_DIR: $(SRCROOT)/../GameMath/App
+        HEADER_SEARCH_PATHS:
+          - $(inherited)
+        LIBRARY_SEARCH_PATHS:
+          - $(inherited)
         OTHER_LDFLAGS:
           - -lSiv3D
           - -lboost_filesystem
