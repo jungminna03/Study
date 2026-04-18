@@ -67,3 +67,19 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 *.lnk
+
+# macOS
+.DS_Store
+
+# Xcode / xcodegen
+GameMath/GameMath-macOS/GameMath.xcodeproj/
+GameMath/GameMath-macOS/build/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# macOS .app build artifacts (built into shared App/)
+GameMath/GameMath/App/GameMath.app/
+GameMath/GameMath/App/*.dSYM/
+
+# JetBrains (Rider/CLion/IDEA)
+.idea/
