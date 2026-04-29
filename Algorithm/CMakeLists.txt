@@ -1,5 +1,4 @@
-﻿cmake_minimum_required(VERSION 4.1)
-cmake_minimum_required(VERSION 3.20)
+﻿cmake_minimum_required(VERSION 3.20)
 project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -13,7 +12,5 @@ foreach(FILE ${ESEY_FILES})
     get_filename_component(FILE_NAME ${FILE} NAME_WE)
 
     # 그 이름으로 실행 파일을 생성! (예: add_executable(Two_Sum Esey/Two_Sum.cpp))
-    add_executable(${FILE_NAME} ${FILE}
-            Esey/Fibonacci_Number.cpp
-    )
+    add_executable(${FILE_NAME} ${FILE})
 endforeach()
