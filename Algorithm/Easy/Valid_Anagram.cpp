@@ -32,20 +32,21 @@ public:
 
     bool isAnagram(string s, string t)
     {
-        if (s.size() != t.size()) // 미리 돌려보내기
-            return false;
+        if (s.size() != t.size()) return false;
 
-        int count[26] = {0}; // Hash 대신 배열 쓰기
+        int arr[26] = {0};
 
-        for (int i = 0; i < s.size(); ++i) // 하나로 합치기
+        for (int i = 0; i < s.size(); ++i)
         {
-            count[s[i] - 'a']++;
-            count[t[i] - 'a']--;
+            ++arr[s[i] - 'a'];
+            --arr[t[i] - 'a'];
         }
 
         for (int i = 0; i < 26; ++i)
-            if (count[i] != 0)
+        {
+            if (arr[i] != 0)
                 return false;
+        }
 
         return true;
     }

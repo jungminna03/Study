@@ -1,0 +1,25 @@
+# Build outputs
+cmake-build-*/
+build/
+out/
+Intermediate/
+
+# IDEs
+.idea/
+.vs/
+.vscode/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+cmake_install.cmake
+
+# macOS
+.DS_Store
+
+# Windows
+*.user
+
+# Generated Xcode project (in case xcodegen is run again)
+GameMath-macOS/GameMath.xcodeproj/
