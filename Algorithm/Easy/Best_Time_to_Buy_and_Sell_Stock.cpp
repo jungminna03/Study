@@ -10,10 +10,10 @@ class Solution
 {
     public:
     int maxProfit(vector<int>& prices) {
-        int min = prices[0];
+        int min = prices[0]; // min()랑 겹침, minPrice가 좋을듯
         int result = 0;
 
-        for (int i = 0; i < prices.size(); ++i)
+        for (int i = 0; i < prices.size(); ++i) // const auto&
         {
             if (prices[i] < min)
             {
@@ -25,7 +25,7 @@ class Solution
             if (temp > result)
             {
                 result = temp;
-            }
+            } // result = std::max(result, num - minPrice); 이거 한줄로 가능
         }
 
         return result < 0 ? 0 : result;
