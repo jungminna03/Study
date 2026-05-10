@@ -14,6 +14,7 @@ Start: 2026-05-06
 - 05-06: LeetCode 49 Group Anagrams (Medium) — sort string as hashmap key
 - 05-07: LeetCode 167 Two Sum II (Medium) — sorted array, two pointers
 - 05-07: LeetCode 121 Best Time to Buy and Sell Stock (Easy) — running minimum
+- 05-10: LeetCode 3 Longest Substring Without Repeating Characters (Medium) - Sliding Window
 
 ## 학습 원칙/学習原則
 
