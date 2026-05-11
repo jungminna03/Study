@@ -15,6 +15,8 @@ Start: 2026-05-06
 - 05-07: LeetCode 167 Two Sum II (Medium) — sorted array, two pointers
 - 05-07: LeetCode 121 Best Time to Buy and Sell Stock (Easy) — running minimum
 - 05-10: LeetCode 3 Longest Substring Without Repeating Characters (Medium) - Sliding Window
+- 05-11: LeetCode 155 Min Stack(Easy) - Stack
+- 05-12: LeetCode 704 Binary Search(Easy)
 
 ## 학습 원칙/学習原則
 

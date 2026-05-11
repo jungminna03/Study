@@ -8,3 +8,7 @@
 ## Day 2
 - unordered_set<T>::count(T); T가 set 안에 얼마나 있는지로 set안에 해당 인스턴스가 있는지 판별 가능
 - 자료형이 담당해주지 못 하는 부분은 따로 다른 도구 이용
+
+# Day 3
+- 오버플로우 신경쓰기
+- return문이 포함된 if문 뒤에는 else if 안 씀

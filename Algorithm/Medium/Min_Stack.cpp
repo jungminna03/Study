@@ -7,10 +7,10 @@
 using namespace std;
 
 class MinStack {
-public:
     stack<int> stk;
     stack<int> minStk;
-
+    
+public:
     void push(int val) {
         stk.push(val);
 
