@@ -9,15 +9,18 @@ using namespace std;
 class MinStack {
 public:
     stack<int> stk;
+    stack<int> minStk;
 
     void push(int val) {
         stk.push(val);
 
+        if (minStk.empty() || val < minStk.top())
+            minStk.push(val);
     }
 
     void pop() {
-
         stk.pop();
+        minStk.pop();
     }
 
     int top() {
@@ -25,7 +28,7 @@ public:
     }
 
     int getMin() {
-        return 0;
+        return minStk.top();
     }
 };
 
