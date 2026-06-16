@@ -2,6 +2,8 @@
 // Created by jungk on 26. 4. 29.
 //
 
+#include <vector>
+
 class Solution {
 public:
     // 재귀는 쓸것이 못됨
@@ -11,7 +13,7 @@ public:
         return climbStairs(n - 1) + climbStairs(n - 2);
     }
 
-    int climbStairs(int n)
+    int climbStairstemp(int n)
     {
         if (n <= 1) return n;
 
@@ -25,6 +27,22 @@ public:
         }
 
         return prev2;
+    }
+
+    int climbStairs(int n)
+    {
+        if (n <= 2) return n;
+
+        std::pmr::vector<int> dp(n + 1);
+        dp[0] = 1;
+        dp[1] = 2;
+
+        for (int i = 2; i < n; ++i)
+        {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+
+        return dp[n - 1];
     }
 };
 
