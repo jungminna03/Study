@@ -15,5 +15,5 @@ foreach(FILE ${SOURCE_FILES})
 
     # 그 이름으로 실행 파일을 생성! (예: add_executable(Two_Sum Easy/Two_Sum.cpp))
     add_executable(${FILE_NAME} ${FILE}
-            Easy/Merge_Two_Sorted_Lists.cpp)
+            Easy/Remove_Element.cpp)
 endforeach()

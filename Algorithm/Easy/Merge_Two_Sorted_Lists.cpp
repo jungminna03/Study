@@ -15,23 +15,8 @@ public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
 
 
-        while (list1 != nullptr && list2 != nullptr)
-        {
-            if (list1->val < list2->val)
-            {
-                auto temp= list1->next;
-                list1->next = list2;
-                list1 = temp;
-            }
-            else
-            {
-                auto temp= list2->next;
-                list2->next = list1;
-                list2 = temp;
-            }
-        }
 
-
+        return nullptr;
     }
 };
 
