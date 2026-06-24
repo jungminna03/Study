@@ -8,10 +8,25 @@ using namespace std;
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
+        erase(nums, val);
+        return nums.size();
+    }
 
-        
+    int removeElementPrev(vector<int>& nums, int val)
+    {
+        int res = 0;
+        int cur = 0;
 
-        return 0;
+        for (auto num : nums)
+        {
+            if (num != val)
+            {
+                ++res;
+                nums[cur++] = num;
+            }
+        }
+
+        return res;
     }
 };
 
