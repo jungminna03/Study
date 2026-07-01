@@ -1,7 +1,6 @@
 # Study
 
-반다이남코 클라이언트 프로그래머 합격을 위한 6개월 학습 기록.
-バンダイナムコクライアントプログラマー就職のための六か月学習記録。
+반다이남코 클라이언트 프로그래머 합격을 위한 학습 기록.
 Start: 2026-05-06
 
 ## Track
@@ -20,20 +19,4 @@ Start: 2026-05-06
 - 05-13: LeetCode 206 Reverse Linked List(Easy) - LinkedList
 - 05-14: LeetCode 141 Linked List Cycle(Easy) - LinkedList
 - 05-14: LeetCode 70 Climbing Stairs (Easy) - DP
-
-## 학습 원칙/学習原則
-
-- 매일 GitHub 커밋
-- 毎日GitHubコミット。
-
-- 패턴별 5문제 통과 후 다음 패턴 진입
-- 各パターンに5問題通過したら次のパターンに突入。
-
-- 알고리즘 문제는 푼 후 중요한 점 은 [Note.md](./Algorithm/Note.md)에 정리
-- アルゴリズム問題は解いた後重要なところは[Note.md](./Algorithm/Note.md)に整理。
-
 ---
-
-> **Language Convention**
-> - 개인적 설명/원칙: 한국어/日本語
-> - 기술 용어/문제명: English
