@@ -1,30 +1,30 @@
 # Study
 
-日本語: README.md | **한국어: [README.ko.md](README.ko.md)**
+**日本語: [README.md](README.md)** | 한국어: README.ko.md
 
-バンダイナムコのクライアントプログラマー合格を目指した学習記録。
+반다이남코 클라이언트 프로그래머 합격을 위한 학습 기록.
 Start: 2026-05-06
 
 ## Track
 
 - **[Algorithm/](./Algorithm)** — LeetCode + AtCoder. C++ Only.
-- **[GameMath/](./GameMath)** — Siv3D ベースのゲーム数学学習。
+- **[GameMath/](./GameMath)** — Siv3D Base GameMath Study.
 
-## 🎮 GameMath 進捗状況
+## 🎮 GameMath 진행 현황
 
-Siv3D でゲーム数学の理論を実際に可視化・実装しながら学習。すべての実装は [`GameMath/Main.cpp`](GameMath/GameMath/Main.cpp) にあります。
+Siv3D로 게임 수학 이론을 직접 시각화·구현하며 학습. 모든 구현은 [`GameMath/Main.cpp`](GameMath/GameMath/Main.cpp)에 있음.
 
-| 理論 | 学習内容 | 実装 |
+| 이론 | 학습 내용 | 구현 |
 | :--- | :--- | :--- |
-| 座標系変換 (Coordinate System) | 画面中心を原点とする論理座標系の構築、数学座標(Y↑)とスクリーン座標(Y↓)の軸反転変換 | `RenderGrid()` で原点中心の単位グリッド(赤=X軸、緑=Y軸)を描画、`toScene()` で論理→スクリーン座標へ変換 |
-| ベクトル & フレーム非依存移動 (Vector / Delta Time) | 2Dベクトル(`Vec2`)で位置・速度を表現、`DeltaTime` を掛けてフレームレートに依存しない等速移動 | 方向キー入力で `playerPos` を `moveSpeed * DeltaTime` だけ移動 |
-| 媒介変数曲線 (Parametric Equation) | 三角関数の媒介変数方程式で曲線を座標点の集合として生成 | ハート曲線 `x = 16sin³t`、`y = 13cos t − 5cos2t − 2cos3t − cos4t` を点としてサンプリングして描画 |
+| 좌표계 변환 (Coordinate System) | 화면 중심을 원점으로 하는 논리 좌표계 구성, 수학 좌표(Y↑)와 스크린 좌표(Y↓)의 축 반전 변환 | `RenderGrid()`로 원점 중심 단위 그리드(빨강=X축, 초록=Y축) 렌더링, `toScene()`으로 논리→스크린 좌표 변환 |
+| 벡터 & 프레임 독립 이동 (Vector / Delta Time) | 2D 벡터(`Vec2`)로 위치·속도 표현, `DeltaTime`을 곱해 프레임률과 무관한 등속 이동 | 방향키 입력으로 `playerPos`를 `moveSpeed * DeltaTime`만큼 이동 |
+| 매개변수 곡선 (Parametric Equation) | 삼각함수 매개변수 방정식으로 곡선을 좌표점 집합으로 생성 | 하트 곡선 `x = 16sin³t`, `y = 13cos t − 5cos2t − 2cos3t − cos4t`를 점으로 샘플링해 렌더링 |
 
-## 📊 Algorithm 進捗状況
+## 📊 Algorithm 진행 현황
 
-LeetCode の C++ アルゴリズム問題を解きながら学習。すべての実装は `Algorithm` にあります。(計 34問)
+LeetCode의 C++ 알고리즘 문제를 풀면서 학습. 모든 구현은 `Algorithm`에 있음. (총 34문제)
 
-| # | Problem | 解法 (Approach) |
+| # | Problem | 풀이 방법 |
 | :---: | :--- | :--- |
 | 1 | Backspace String Compare | [Two Pointers](Algorithm/Easy/Backspace_String_Compare.cpp) |
 | 2 | Best Time to Buy and Sell Stock | [Greedy](Algorithm/Easy/Best_Time_to_Buy_and_Sell_Stock.cpp) |
