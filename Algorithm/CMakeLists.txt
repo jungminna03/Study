@@ -4,7 +4,7 @@ project(Algorithm)
 set(CMAKE_CXX_STANDARD 20)
 
 # 1. 'Easy', 'Medium' 폴더 안에 있는 모든 .cpp 파일을 리스트로 가져옵니다.
-file(GLOB SOURCE_FILES
+file(GLOB SOURCE_FILES CONFIGURE_DEPENDS
         "Easy/*.cpp"
         "Medium/*.cpp")
 
@@ -14,6 +14,5 @@ foreach(FILE ${SOURCE_FILES})
     get_filename_component(FILE_NAME ${FILE} NAME_WE)
 
     # 그 이름으로 실행 파일을 생성! (예: add_executable(Two_Sum Easy/Two_Sum.cpp))
-    add_executable(${FILE_NAME} ${FILE}
-            Easy/Reverse_Linked_List.cpp)
+    add_executable(${FILE_NAME} ${FILE})
 endforeach()
