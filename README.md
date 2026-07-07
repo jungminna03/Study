@@ -22,7 +22,7 @@ Siv3D でゲーム数学の理論を実際に可視化・実装しながら学�
 
 ## 📊 Algorithm 進捗状況
 
-LeetCode の C++ アルゴリズム問題を解きながら学習。すべての実装は `Algorithm` にあります。(計 34問)
+LeetCode の C++ アルゴリズム問題を解きながら学習。すべての実装は `Algorithm` にあります。(計 35問)
 
 | # | Problem | 解法 (Approach) |
 | :---: | :--- | :--- |
@@ -38,25 +38,26 @@ LeetCode の C++ アルゴリズム問題を解きながら学習。すべての
 | 10 | House Robber | [DP](Algorithm/Medium/House_Robber.cpp) |
 | 11 | Implement Queue using Stacks | [Stack](Algorithm/Easy/Implement_Queue_using_Stacks.cpp) |
 | 12 | Intersection of Two Linked Lists | [Two Pointers](Algorithm/Easy/Intersection_of_Two_Linked_Lists.cpp) |
-| 13 | Kth Largest Element in a Stream | [Heap (Min-Heap)](Algorithm/Easy/Kth_Largest_Element_in_a_Stream.cpp) |
-| 14 | Last Stone Weight | [Heap (Max-Heap)](Algorithm/Easy/Last_Stone_Weight.cpp) |
-| 15 | Linked List Cycle | [Two Pointers (Floyd)](Algorithm/Easy/Linked_List_Cycle.cpp) |
-| 16 | Longest Substring Without Repeating Characters | [Sliding Window](Algorithm/Medium/Longest_Substring_Without_Repeating_Characters.cpp) |
-| 17 | Majority Element | [Boyer-Moore Voting](Algorithm/Easy/Majority_Element.cpp) |
-| 18 | Merge Two Sorted Lists | [Two Pointers (Linked List)](Algorithm/Easy/Merge_Two_Sorted_Lists.cpp) |
-| 19 | Min Stack | [Stack](Algorithm/Medium/Min_Stack.cpp) |
-| 20 | Missing Number | [Math (Gauss / XOR)](Algorithm/Easy/Missing_Number.cpp) |
-| 21 | Move Zeroes | [Two Pointers](Algorithm/Easy/Move_Zeroes.cpp) |
-| 22 | Number of Strings That Appear as Substrings in Word | [String Search](Algorithm/Easy/Number_of_Strings_That_Appear_as_Substrings_in_Word.cpp) |
-| 23 | Remove All Adjacent Duplicates In String | [Stack](Algorithm/Easy/Remove_All_Adjacent_Duplicates_In_String.cpp) |
-| 24 | Remove Duplicates from Sorted Array | [Two Pointers](Algorithm/Easy/Remove_Duplicates_from_Sorted_Array.cpp) |
-| 25 | Remove Duplicates from Sorted List | [Linked List](Algorithm/Easy/Remove_Duplicates_from_Sorted_List.cpp) |
-| 26 | Remove Element | [Two Pointers](Algorithm/Easy/Remove_Element.cpp) |
-| 27 | Reverse Bits | [Bit Manipulation](Algorithm/Easy/Reverse_Bits.cpp) |
-| 28 | Reverse Linked List | [Linked List](Algorithm/Easy/Reverse_Linked_List.cpp) |
-| 29 | Search a 2D Matrix | [Binary Search](Algorithm/Medium/Search_a_2D_Matrix.cpp) |
-| 30 | Search Insert Position | [Binary Search](Algorithm/Easy/Search_Insert_Position.cpp) |
-| 31 | Two Sum | [Hash Table](Algorithm/Easy/Two_Sum.cpp) |
-| 32 | Two Sum II Input Array Is Sorted | [Two Pointers](Algorithm/Medium/Two_Sum_II_Input_Array_Is_Sorted.cpp) |
-| 33 | Valid Anagram | [Hash Table (Counting)](Algorithm/Easy/Valid_Anagram.cpp) |
-| 34 | Valid Palindrome | [Two Pointers](Algorithm/Easy/Valid_Palindrome.cpp) |
+| 13 | Invert Binary Tree | [Tree Traversal (BFS)](Algorithm/Easy/Invert_Binary_Tree.cpp) |
+| 14 | Kth Largest Element in a Stream | [Heap (Min-Heap)](Algorithm/Easy/Kth_Largest_Element_in_a_Stream.cpp) |
+| 15 | Last Stone Weight | [Heap (Max-Heap)](Algorithm/Easy/Last_Stone_Weight.cpp) |
+| 16 | Linked List Cycle | [Two Pointers (Floyd)](Algorithm/Easy/Linked_List_Cycle.cpp) |
+| 17 | Longest Substring Without Repeating Characters | [Sliding Window](Algorithm/Medium/Longest_Substring_Without_Repeating_Characters.cpp) |
+| 18 | Majority Element | [Boyer-Moore Voting](Algorithm/Easy/Majority_Element.cpp) |
+| 19 | Merge Two Sorted Lists | [Two Pointers (Linked List)](Algorithm/Easy/Merge_Two_Sorted_Lists.cpp) |
+| 20 | Min Stack | [Stack](Algorithm/Medium/Min_Stack.cpp) |
+| 21 | Missing Number | [Math (Gauss / XOR)](Algorithm/Easy/Missing_Number.cpp) |
+| 22 | Move Zeroes | [Two Pointers](Algorithm/Easy/Move_Zeroes.cpp) |
+| 23 | Number of Strings That Appear as Substrings in Word | [String Search](Algorithm/Easy/Number_of_Strings_That_Appear_as_Substrings_in_Word.cpp) |
+| 24 | Remove All Adjacent Duplicates In String | [Stack](Algorithm/Easy/Remove_All_Adjacent_Duplicates_In_String.cpp) |
+| 25 | Remove Duplicates from Sorted Array | [Two Pointers](Algorithm/Easy/Remove_Duplicates_from_Sorted_Array.cpp) |
+| 26 | Remove Duplicates from Sorted List | [Linked List](Algorithm/Easy/Remove_Duplicates_from_Sorted_List.cpp) |
+| 27 | Remove Element | [Two Pointers](Algorithm/Easy/Remove_Element.cpp) |
+| 28 | Reverse Bits | [Bit Manipulation](Algorithm/Easy/Reverse_Bits.cpp) |
+| 29 | Reverse Linked List | [Linked List](Algorithm/Easy/Reverse_Linked_List.cpp) |
+| 30 | Search a 2D Matrix | [Binary Search](Algorithm/Medium/Search_a_2D_Matrix.cpp) |
+| 31 | Search Insert Position | [Binary Search](Algorithm/Easy/Search_Insert_Position.cpp) |
+| 32 | Two Sum | [Hash Table](Algorithm/Easy/Two_Sum.cpp) |
+| 33 | Two Sum II Input Array Is Sorted | [Two Pointers](Algorithm/Medium/Two_Sum_II_Input_Array_Is_Sorted.cpp) |
+| 34 | Valid Anagram | [Hash Table (Counting)](Algorithm/Easy/Valid_Anagram.cpp) |
+| 35 | Valid Palindrome | [Two Pointers](Algorithm/Easy/Valid_Palindrome.cpp) |
