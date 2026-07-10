@@ -22,7 +22,7 @@ Siv3D로 게임 수학 이론을 직접 시각화·구현하며 학습. 모든 �
 
 ## 📊 Algorithm 진행 현황
 
-LeetCode의 C++ 알고리즘 문제를 풀면서 학습. 모든 구현은 `Algorithm`에 있음. (총 37문제)
+LeetCode의 C++ 알고리즘 문제를 풀면서 학습. 모든 구현은 `Algorithm`에 있음. (총 38문제)
 
 | # | Problem | 풀이 방법 |
 | :---: | :--- | :--- |
@@ -47,19 +47,20 @@ LeetCode의 C++ 알고리즘 문제를 풀면서 학습. 모든 구현은 `Algor
 | 19 | Majority Element | [Boyer-Moore Voting](Algorithm/Easy/Majority_Element.cpp) |
 | 20 | Maximum Depth of Binary Tree | [Tree Recursion (DFS)](Algorithm/Easy/Maximum_Depth_of_Binary_Tree.cpp) |
 | 21 | Merge Two Sorted Lists | [Two Pointers (Linked List)](Algorithm/Easy/Merge_Two_Sorted_Lists.cpp) |
-| 22 | Min Stack | [Stack](Algorithm/Medium/Min_Stack.cpp) |
-| 23 | Missing Number | [Math (Gauss / XOR)](Algorithm/Easy/Missing_Number.cpp) |
-| 24 | Move Zeroes | [Two Pointers](Algorithm/Easy/Move_Zeroes.cpp) |
-| 25 | Number of Strings That Appear as Substrings in Word | [String Search](Algorithm/Easy/Number_of_Strings_That_Appear_as_Substrings_in_Word.cpp) |
-| 26 | Remove All Adjacent Duplicates In String | [Stack](Algorithm/Easy/Remove_All_Adjacent_Duplicates_In_String.cpp) |
-| 27 | Remove Duplicates from Sorted Array | [Two Pointers](Algorithm/Easy/Remove_Duplicates_from_Sorted_Array.cpp) |
-| 28 | Remove Duplicates from Sorted List | [Linked List](Algorithm/Easy/Remove_Duplicates_from_Sorted_List.cpp) |
-| 29 | Remove Element | [Two Pointers](Algorithm/Easy/Remove_Element.cpp) |
-| 30 | Reverse Bits | [Bit Manipulation](Algorithm/Easy/Reverse_Bits.cpp) |
-| 31 | Reverse Linked List | [Linked List](Algorithm/Easy/Reverse_Linked_List.cpp) |
-| 32 | Search a 2D Matrix | [Binary Search](Algorithm/Medium/Search_a_2D_Matrix.cpp) |
-| 33 | Search Insert Position | [Binary Search](Algorithm/Easy/Search_Insert_Position.cpp) |
-| 34 | Two Sum | [Hash Table](Algorithm/Easy/Two_Sum.cpp) |
-| 35 | Two Sum II Input Array Is Sorted | [Two Pointers](Algorithm/Medium/Two_Sum_II_Input_Array_Is_Sorted.cpp) |
-| 36 | Valid Anagram | [Hash Table (Counting)](Algorithm/Easy/Valid_Anagram.cpp) |
-| 37 | Valid Palindrome | [Two Pointers](Algorithm/Easy/Valid_Palindrome.cpp) |
+| 22 | Min Cost Climbing Stairs | [DP](Algorithm/Easy/Min_Cost_Climbing_Stairs.cpp) |
+| 23 | Min Stack | [Stack](Algorithm/Medium/Min_Stack.cpp) |
+| 24 | Missing Number | [Math (Gauss / XOR)](Algorithm/Easy/Missing_Number.cpp) |
+| 25 | Move Zeroes | [Two Pointers](Algorithm/Easy/Move_Zeroes.cpp) |
+| 26 | Number of Strings That Appear as Substrings in Word | [String Search](Algorithm/Easy/Number_of_Strings_That_Appear_as_Substrings_in_Word.cpp) |
+| 27 | Remove All Adjacent Duplicates In String | [Stack](Algorithm/Easy/Remove_All_Adjacent_Duplicates_In_String.cpp) |
+| 28 | Remove Duplicates from Sorted Array | [Two Pointers](Algorithm/Easy/Remove_Duplicates_from_Sorted_Array.cpp) |
+| 29 | Remove Duplicates from Sorted List | [Linked List](Algorithm/Easy/Remove_Duplicates_from_Sorted_List.cpp) |
+| 30 | Remove Element | [Two Pointers](Algorithm/Easy/Remove_Element.cpp) |
+| 31 | Reverse Bits | [Bit Manipulation](Algorithm/Easy/Reverse_Bits.cpp) |
+| 32 | Reverse Linked List | [Linked List](Algorithm/Easy/Reverse_Linked_List.cpp) |
+| 33 | Search a 2D Matrix | [Binary Search](Algorithm/Medium/Search_a_2D_Matrix.cpp) |
+| 34 | Search Insert Position | [Binary Search](Algorithm/Easy/Search_Insert_Position.cpp) |
+| 35 | Two Sum | [Hash Table](Algorithm/Easy/Two_Sum.cpp) |
+| 36 | Two Sum II Input Array Is Sorted | [Two Pointers](Algorithm/Medium/Two_Sum_II_Input_Array_Is_Sorted.cpp) |
+| 37 | Valid Anagram | [Hash Table (Counting)](Algorithm/Easy/Valid_Anagram.cpp) |
+| 38 | Valid Palindrome | [Two Pointers](Algorithm/Easy/Valid_Palindrome.cpp) |
