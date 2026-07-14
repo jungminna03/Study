@@ -83,3 +83,12 @@ GameMath/GameMath/App/*.dSYM/
 
 # JetBrains (Rider/CLion/IDEA)
 .idea/
+
+# Algorithm build artifacts (직접 컴파일한 실행 파일 / 디버그 심볼)
+*.dSYM/
+Algorithm/Easy/*
+!Algorithm/Easy/*.cpp
+Algorithm/Medium/*
+!Algorithm/Medium/*.cpp
+Algorithm/Hard/*
+!Algorithm/Hard/*.cpp
