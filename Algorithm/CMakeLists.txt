@@ -3,6 +3,9 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 20)
 
+# 소스 파일이 BOM 없는 UTF-8이므로 MSVC가 CP949로 오독하지 않도록 강제
+add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
+
 # 1. 'Easy', 'Medium' 폴더 안에 있는 모든 .cpp 파일을 리스트로 가져옵니다.
 file(GLOB SOURCE_FILES CONFIGURE_DEPENDS
         "Easy/*.cpp"
